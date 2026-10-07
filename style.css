@@ -1,0 +1,32 @@
+:root {
+  --main-bg: #F1E3CF;
+  --card-gold: #C8A04A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--main-bg);
+  font-family: Arial, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: min(100%, 430px);
+  min-height: 720px;
+  background: var(--card-gold);
+  border-radius: 28px;
+  box-shadow: 0 18px 45px rgba(80, 55, 15, 0.18);
+}
