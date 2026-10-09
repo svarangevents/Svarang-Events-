@@ -153,8 +153,8 @@ h2 {
   padding: 3px 0;
   margin: 0;
 }
-.divider {
-  width: 120px;
+  .divider {
+  width: 140px;
   height: 3px;
   margin: 24px auto;
   background: #C8A04A;
@@ -172,9 +172,9 @@ h2 {
 }
 
 .divider::before {
-  left: -16px;
+  left: -18px;
 }
 
 .divider::after {
-  right: -16px;
+  right: -18px;
 }
