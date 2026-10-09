@@ -19,7 +19,7 @@ body {
   max-width: 430px;
   min-height: 720px;
   padding: 48px 28px;
-  border-radius: 28px;
+  border-radius: 0;
   background: #F7F0E5;
   box-shadow: 0 12px 35px rgba(70, 45, 15, 0.18);
   text-align: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .logo {
-  width: min(260px, 75%);
+  width: min(200px, 60%);
   height: auto;
   display: block;
   margin: 0 auto 24px;
