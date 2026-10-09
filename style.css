@@ -1,3 +1,6 @@
+/* ========================================
+   SVARANG EVENTS — DIGITAL BUSINESS CARD
+   ======================================== */
 /* RESET */
 * {
   box-sizing: border-box;
@@ -8,250 +11,243 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
   width: 100%;
   min-height: 100vh;
   min-height: 100dvh;
+  margin: 0;
+  padding: 24px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 24px;
   background: #C8A04A;
-  font-family: Arial, sans-serif;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /* MAIN CARD */
 .card {
   width: 100%;
   max-width: 540px;
   margin: 0 auto;
-  padding: 48px 40px;
-  text-align: center;
+  padding: 34px 28px 30px;
   background-color: #F8F1E5;
   background-image: repeating-linear-gradient(
     135deg,
-    transparent 0px,
-    transparent 34px,
-    rgba(200, 160, 74, 0.10) 35px,
-    transparent 36px
+    rgba(200, 160, 74, 0.035) 0,
+    rgba(200, 160, 74, 0.035) 1px,
+    transparent 1px,
+    transparent 12px
   );
   border-radius: 0;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
 }
-/* TOP LABEL */
+/* DIGITAL BUSINESS CARD
+   GOLDEN LINES ON LEFT AND RIGHT */
 .top-label {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  margin-bottom: 22px;
-  color: #C8A04A;
-}
-.top-label p {
-  margin: 0;
-  font-size: 12px;
-  font-weight: 700;
-  letter-spacing: 3px;
+  gap: 10px;
+  width: 100%;
+  margin: 0 auto 28px;
+  color: #B89A55;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
 }
 .top-label span {
-  display: block;
+  display: inline-block;
   flex-shrink: 0;
-  width: 25px;
-  height: 2px;
-  background: #C8A04A;
+  white-space: nowrap;
+}
+.top-label::before,
+.top-label::after {
+  content: "";
+  display: block;
+  flex: 1 1 0;
+  min-width: 12px;
+  max-width: 55px;
+  height: 1px;
+  background-color: #C8A04A;
 }
 /* LOGO */
 .logo {
   display: block;
-  width: 190px;
-  max-width: 75%;
-  height: auto;
+  width: 100%;
+  max-width: 220px;
+  max-height: 190px;
+  object-fit: contain;
   margin: 0 auto 24px;
 }
-/* BRAND HEADING */
+/* MAIN BRAND NAME */
 h1 {
-  margin: 0 0 10px;
-  color: #000000;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 38px;
-  font-weight: 400;
-  letter-spacing: 5px;
-  overflow-wrap: break-word;
-}
-/* TAGLINE */
-.tagline-block {
-  width: 100%;
-  margin: 0 auto;
-  padding: 0;
+  margin: 0 0 22px;
   text-align: center;
-  background: transparent;
-}
-.tagline-block .tagline,
-.tagline-block .location {
-  margin: 0;
-  padding: 3px 0;
-  background: transparent;
-  color: #000000;
-}
-.tagline-block .tagline {
-  font-size: 19px;
-  font-weight: 700;
-  letter-spacing: 1px;
-}
-.tagline-block .location {
-  margin-top: 5px;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
-/* GOLD DIVIDER */
-.divider {
-  position: relative;
-  width: 140px;
-  height: 3px;
-  margin: 30px auto;
-  background: #C8A04A;
-}
-.divider::before,
-.divider::after {
-  content: "◆";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #C8A04A;
-  font-size: 12px;
-}
-.divider::before {
-  left: -22px;
-}
-.divider::after {
-  right: -22px;
-}
-/* SEVEN CONTACT BOXES */
-.buttons {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr);
-  gap: 12px;
-  width: 100%;
-  margin: 0 auto;
-}
-.button {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  width: 100%;
-  min-width: 0;
-  min-height: 78px;
-  padding: 12px 14px;
-  border: 1px solid #D9D0BE;
-  border-radius: 0;
-  background: #FFFCF5;
-  color: #171717;
-  text-decoration: none;
-  text-align: left;
-  font-size: 16px;
-  line-height: 1.4;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(25px, 7vw, 34px);
   font-weight: 500;
-  box-shadow: none;
-  -webkit-tap-highlight-color: transparent;
+  letter-spacing: 2px;
+  line-height: 1.25;
 }
-/* ICON CIRCLE */
-.button .icon {
+/* GOLDEN DIVIDER — NO BLACK STAR */
+.divider {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 0 0 46px;
-  width: 46px;
-  height: 46px;
-  border: 1px solid #C8A04A;
-  border-radius: 50%;
-  background: #F1E7D0;
-  color: #000000;
-  font-size: 22px;
-  line-height: 1;
+  width: 100%;
+  max-width: 220px;
+  height: 10px;
+  margin: 0 auto 30px;
 }
+.divider::before {
+  content: "";
+  display: block;
+  width: 80%;
+  max-width: 150px;
+  height: 3px;
+  background: #B89A55;
+}
+.divider::after {
+  content: none;
+  display: none;
+}
+/* BUTTON LIST */
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+/* INDIVIDUAL CONTACT BUTTON */
+.button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 78px;
+  padding: 12px 14px;
+  gap: 14px;
+  background: #FFFCF5;
+  border: 1px solid #D9D0BE;
+  border-radius: 0;
+  color: #171717;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+.button:hover {
+  background: #F5EBD7;
+}
+/* ICON CIRCLE */
+.button .icon {
+  width: 44px;
+  height: 44px;
+  min-width: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #C8A04A;
+  background: #F1E7D0;
+  color: #171717;
+}
+/* ICON SVG */
 .button .icon svg {
   display: block;
   width: 22px;
   height: 22px;
   flex-shrink: 0;
 }
-/* BUTTON TEXT */
+/* BUTTON TEXT CONTAINER */
 .button-text {
   display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  gap: 4px;
+  flex: 1;
   min-width: 0;
-  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
 }
+/* BUTTON TITLE */
 .button-text strong {
-  color: #171717;
   font-size: 16px;
-  font-weight: 700;
-  line-height: 1.4;
+  line-height: 1.25;
+  font-weight: 600;
+  color: #171717;
 }
+/* ALL SUBTITLES — 14PX */
 .button-text small {
+  display: block;
+  font-size: 14px !important;
+  line-height: 1.35;
   color: #77736B;
-  font-size: 12px;
   font-style: italic;
-  font-weight: 400;
-  line-height: 1.4;
   overflow-wrap: anywhere;
 }
+/* PHONE NUMBER */
+.button-text .phone-number {
+  font-size: 14px !important;
+  font-style: italic;
+}
 /* RIGHT ARROW */
-.button .arrow {
-  display: block;
-  flex: 0 0 auto;
+.arrow {
+  flex-shrink: 0;
   margin-left: auto;
   color: #B89A55;
   font-size: 26px;
   line-height: 1;
 }
-/* TOUCH FEEDBACK */
-.button:active {
-  transform: none;
-}
-/* SMALL PHONES */
-@media screen and (max-width: 480px) {
+/* TABLET LAYOUT */
+@media (min-width: 481px) and (max-width: 768px) {
   body {
-    padding: 14px;
+    padding: 20px;
   }
   .card {
-    width: 100%;
     max-width: 540px;
-    padding: 34px 18px;
-    border-radius: 0;
+    padding: 32px 24px 28px;
+  }
+}
+/* MOBILE LAYOUT */
+@media (max-width: 480px) {
+  body {
+    padding: 16px;
+  }
+  .card {
+    padding: 28px 18px 22px;
+  }
+  /* Keep heading on one line with side lines */
+  .top-label {
+    gap: 7px;
+    margin-bottom: 26px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+  }
+  .top-label::before,
+  .top-label::after {
+    min-width: 12px;
+    max-width: 55px;
+  }
+  .logo {
+    max-width: 190px;
+    max-height: 170px;
+    margin-bottom: 22px;
   }
   h1 {
     font-size: clamp(25px, 7vw, 30px);
-    letter-spacing: 3px;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
   }
-  .top-label {
-    gap: 8px;
-  }
-  .top-label p {
-    font-size: 10px;
-    letter-spacing: 2px;
-  }
-  .top-label span {
-    width: 18px;
-  }
-  .tagline-block .tagline {
-    font-size: 16px;
-  }
-  .tagline-block .location {
-    font-size: 13px;
+  .divider {
+    margin-bottom: 24px;
   }
   .button {
     min-height: 74px;
-    padding: 10px;
-    gap: 12px;
+    padding: 10px 11px;
+    gap: 11px;
   }
   .button .icon {
-    flex-basis: 42px;
-    width: 42px;
-    height: 42px;
-    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
   }
   .button .icon svg {
     width: 21px;
@@ -261,6 +257,9 @@ h1 {
     font-size: 15px;
   }
   .button-text small {
-    font-size: 11px;
+    font-size: 14px !important;
+  }
+  .arrow {
+    font-size: 24px;
   }
 }
