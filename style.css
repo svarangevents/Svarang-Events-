@@ -181,4 +181,9 @@ h1 {
     box-sizing: border-box;
     width: 100%;
 }
+  @media (max-width: 480px) {
+  .button {
+    border-radius: 0 !important;
+  }
+}
 }
