@@ -136,13 +136,14 @@ h2 {
   color: #C8A04A;
 }
 
-/* White, bold tagline inside the gold card */
-.tagline,
-.location {
-  color: #FFFFFF;
-  font-weight: 700;
-  font-size: 13px;
+.tagline-block {
   background-color: #C8A04A;
-  padding: 6px 10px;
-  border-radius: 4px;
+  border-radius: 0;
+  padding: 8px 10px;
+}
+
+.tagline-block .tagline,
+.tagline-block .location {
+  background: transparent;
+  padding: 2px 0;
 }
