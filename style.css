@@ -1,9 +1,17 @@
+/* RESET */
 * {
   box-sizing: border-box;
 }
+html {
+  width: 100%;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+}
 body {
   margin: 0;
+  width: 100%;
   min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -11,9 +19,11 @@ body {
   background: #C8A04A;
   font-family: Arial, sans-serif;
 }
+/* MAIN CARD */
 .card {
   width: 100%;
   max-width: 540px;
+  margin: 0 auto;
   padding: 48px 40px;
   text-align: center;
   background-color: #F8F1E5;
@@ -24,9 +34,10 @@ body {
     rgba(200, 160, 74, 0.10) 35px,
     transparent 36px
   );
-  border-radius: 0 !important;
+  border-radius: 0;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
 }
+/* TOP LABEL */
 .top-label {
   display: flex;
   align-items: center;
@@ -43,10 +54,12 @@ body {
 }
 .top-label span {
   display: block;
+  flex-shrink: 0;
   width: 25px;
   height: 2px;
   background: #C8A04A;
 }
+/* LOGO */
 .logo {
   display: block;
   width: 190px;
@@ -54,6 +67,7 @@ body {
   height: auto;
   margin: 0 auto 24px;
 }
+/* BRAND HEADING */
 h1 {
   margin: 0 0 10px;
   color: #000000;
@@ -61,7 +75,9 @@ h1 {
   font-size: 38px;
   font-weight: 400;
   letter-spacing: 5px;
+  overflow-wrap: break-word;
 }
+/* TAGLINE */
 .tagline-block {
   width: 100%;
   margin: 0 auto;
@@ -87,6 +103,7 @@ h1 {
   font-weight: 700;
   letter-spacing: 4px;
 }
+/* GOLD DIVIDER */
 .divider {
   position: relative;
   width: 140px;
@@ -122,10 +139,11 @@ h1 {
   align-items: center;
   gap: 14px;
   width: 100%;
+  min-width: 0;
   min-height: 78px;
   padding: 12px 14px;
   border: 1px solid #D9D0BE;
-  border-radius: 0 !important;
+  border-radius: 0;
   background: #FFFCF5;
   color: #171717;
   text-decoration: none;
@@ -134,7 +152,9 @@ h1 {
   line-height: 1.4;
   font-weight: 500;
   box-shadow: none;
+  -webkit-tap-highlight-color: transparent;
 }
+/* ICON CIRCLE */
 .button .icon {
   display: flex;
   align-items: center;
@@ -149,6 +169,13 @@ h1 {
   font-size: 22px;
   line-height: 1;
 }
+.button .icon svg {
+  display: block;
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+/* BUTTON TEXT */
 .button-text {
   display: flex;
   flex: 1 1 auto;
@@ -161,36 +188,53 @@ h1 {
   color: #171717;
   font-size: 16px;
   font-weight: 700;
+  line-height: 1.4;
 }
 .button-text small {
   color: #77736B;
   font-size: 12px;
   font-style: italic;
   font-weight: 400;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
 }
+/* RIGHT ARROW */
 .button .arrow {
+  display: block;
   flex: 0 0 auto;
   margin-left: auto;
   color: #B89A55;
   font-size: 26px;
   line-height: 1;
 }
+/* TOUCH FEEDBACK */
 .button:active {
   transform: none;
 }
-@media (max-width: 480px) {
+/* SMALL PHONES */
+@media screen and (max-width: 480px) {
   body {
     padding: 14px;
   }
   .card {
     width: 100%;
-    max-width: 100%;
+    max-width: 540px;
     padding: 34px 18px;
-    border-radius: 0 !important;
+    border-radius: 0;
   }
   h1 {
-    font-size: 30px;
+    font-size: clamp(25px, 7vw, 30px);
     letter-spacing: 3px;
+  }
+  .top-label {
+    gap: 8px;
+  }
+  .top-label p {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .top-label span {
+    width: 18px;
   }
   .tagline-block .tagline {
     font-size: 16px;
@@ -201,13 +245,17 @@ h1 {
   .button {
     min-height: 74px;
     padding: 10px;
-    border-radius: 0 !important;
+    gap: 12px;
   }
   .button .icon {
     flex-basis: 42px;
     width: 42px;
     height: 42px;
     font-size: 20px;
+  }
+  .button .icon svg {
+    width: 21px;
+    height: 21px;
   }
   .button-text strong {
     font-size: 15px;
