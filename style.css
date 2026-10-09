@@ -97,10 +97,11 @@ h1 {
   text-align: center;
   color: #77736B;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 12px;
+  font-size: 13px;
   font-style: italic;
+  font-weight: 600;
   line-height: 1.5;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.3px;
 }
 /* GOLDEN LUXURY DIVIDER WITH DIAMONDS */
 .divider {
