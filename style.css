@@ -104,4 +104,26 @@ h2 {
     padding: 40px 22px;
     border-radius: 24px;
   }
+  .top-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 18px;
+  color: #C8A04A;
+}
+
+.top-label p {
+  font-size: 11px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.top-label span {
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: #C8A04A;
 }
