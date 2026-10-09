@@ -173,7 +173,12 @@ h1 {
   }
 
   .button {
-    padding: 16px 10px;
+    padding: 16px 18px;
     font-size: 15px;
-  }
+    background: #F8F1E5 !important;
+    color: #000000 !important;
+    border: 1px solid #D9D0BE !important;
+    box-sizing: border-box;
+    width: 100%;
+}
 }
