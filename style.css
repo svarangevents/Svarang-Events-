@@ -135,6 +135,7 @@ h2 {
   margin-bottom: 18px;
   color: #C8A04A;
 }
+
 .tagline-block {
   background: transparent !important;
   width: 100%;
@@ -151,4 +152,29 @@ h2 {
   font-size: 15px;
   padding: 3px 0;
   margin: 0;
+}
+.divider {
+  width: 120px;
+  height: 3px;
+  margin: 24px auto;
+  background: #C8A04A;
+  position: relative;
+}
+
+.divider::before,
+.divider::after {
+  content: "◆";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #C8A04A;
+  font-size: 10px;
+}
+
+.divider::before {
+  left: -16px;
+}
+
+.divider::after {
+  right: -16px;
 }
