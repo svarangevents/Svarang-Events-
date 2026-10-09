@@ -24,7 +24,7 @@ body {
     rgba(200, 160, 74, 0.10) 35px,
     transparent 36px
   );
-  border-radius: 0;
+  border-radius: 0 !important;
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.10);
 }
 .top-label {
@@ -56,7 +56,7 @@ body {
 }
 h1 {
   margin: 0 0 10px;
-  color: #000;
+  color: #000000;
   font-family: Georgia, "Times New Roman", serif;
   font-size: 38px;
   font-weight: 400;
@@ -74,7 +74,7 @@ h1 {
   margin: 0;
   padding: 3px 0;
   background: transparent;
-  color: #000;
+  color: #000000;
 }
 .tagline-block .tagline {
   font-size: 19px;
@@ -125,7 +125,7 @@ h1 {
   min-height: 78px;
   padding: 12px 14px;
   border: 1px solid #D9D0BE;
-  border-radius: 0;
+  border-radius: 0 !important;
   background: #FFFCF5;
   color: #171717;
   text-decoration: none;
@@ -145,7 +145,7 @@ h1 {
   border: 1px solid #C8A04A;
   border-radius: 50%;
   background: #F1E7D0;
-  color: #000;
+  color: #000000;
   font-size: 22px;
   line-height: 1;
 }
@@ -186,7 +186,7 @@ h1 {
     width: 100%;
     max-width: 100%;
     padding: 34px 18px;
-    border-radius: 0;
+    border-radius: 0 !important;
   }
   h1 {
     font-size: 30px;
@@ -201,6 +201,7 @@ h1 {
   .button {
     min-height: 74px;
     padding: 10px;
+    border-radius: 0 !important;
   }
   .button .icon {
     flex-basis: 42px;
