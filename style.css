@@ -24,6 +24,13 @@ body {
   box-shadow: 0 12px 35px rgba(70, 45, 15, 0.18);
   text-align: center;
   color: #000000;
+  background-image: repeating-linear-gradient(
+  135deg,
+  transparent 0px,
+  transparent 28px,
+  rgba(200, 160, 74, 0.10) 29px,
+  transparent 30px
+);
 }
 
 .logo {
