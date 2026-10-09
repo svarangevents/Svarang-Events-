@@ -178,3 +178,14 @@ h2 {
 .divider::after {
   right: -18px;
 }
+/* Keep the same design on all screen sizes */
+.button {
+  background: #F8F1E5 !important;
+  color: #000000 !important;
+  border: 1px solid #D9D0BE !important;
+}
+
+.divider {
+  background: #C8A04A !important;
+  height: 3px !important;
+}
